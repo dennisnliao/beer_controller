@@ -1,7 +1,7 @@
 /*
  * Define constants and include additional files in this header.
  */
-
+#include <Wire.h>
 
 /* ADC Defs
  *  Since ADC is 1024 bits resolution with min 0 max 2.56v, we get 2.5mv/count
@@ -15,12 +15,11 @@
 #define LOWEST_TMP DEGREE_F_392
 #define HIGHEST_TMP DEGREE_F_806
 
-
 /*
  * Pin Defs
  * Define static pin number mappings here. Built for the Adafruit Trinket (attiny85)
  */
-int bucket_sensor = 3;
-int fridge_sensor = 4;
-int heater_relay = 1;
-int fridge_relay = 0
+static int bucket_sensor = 3;
+static int fridge_sensor = 4;
+static int heater_relay = 1;
+static int fridge_relay = 0;

@@ -1,3 +1,6 @@
+#include "subroutines.h"
+#include "beer_controller.h"
+
 /*
  * get_temp
  * Gets temperature from specified pin number and calculates the temperature in F.
